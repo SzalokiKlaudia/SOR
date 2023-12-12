@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(design/teglafal.jpg);
+}
+
+main{
+    width: 80%;
+    max-height: 1000px;
+    margin: auto;
+    background-color:  #333333;
+    box-shadow: 0 4px 8px 0  #999999, 0 4px 8px 0  #999999;
+
+}
+
+header{
+    background-image: url(design/beer-new_401732638.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    border-bottom: 1px solid #999999;
+
+}
+
+header h1{
+    font-weight: 900;
+    font-family:  Garamond;
+    /* letter-spacing: 3px; */
+    font-size: 32px;
+    text-align: left;
+    padding: 30px 30px;
+
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: 900;
+    padding-left: 1rem;
+    
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0.5rem;
+    margin-bottom: 4px;
+}
+
+nav{
+    border-left: 3px solid #999999;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+nav li{
+    border: 1px solid rgb(77, 75, 75);
+    border-radius: 0.3rem;
+    
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+
+nav li:hover {
+    background-color: #bfbcbc;
+}
+
+article ul{
+font-size: 10px;
+list-style-type: square;
+padding-bottom: 2rem;
+}
+
+article{
+    background-color: #000000;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+article li{
+    line-height: 13px;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+article h1 {
+    font-size: 15px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;  
+}
+
+article img{
+    float: left;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid rgb(77, 75, 75);
+    border-radius: 2px;
+    margin: 1rem 4rem  5rem 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+footer{
+    height: 2rem;
+    background-color: rgb(115, 114, 114);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+   
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    article{
+        grid-area: 2;
+        padding: 2rem;
+    }
+    nav{
+        grid-area: 1;
+    }
+    main{
+        width: 100%;
+        max-height: 100%;
+    }
+}
+
+table,td,th {
+    width: 1000px;
+    border: 1px solid rgb(188, 182, 182);
+    border-collapse: collapse;
+    color: #ffffff;
+    text-align: center;
+    margin: 1rem;
+  }
+
+   tr:nth-child(odd) {
+    background-color: rgb(115, 114, 114);
+  }
